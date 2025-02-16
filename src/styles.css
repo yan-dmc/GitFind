@@ -1,0 +1,21 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100..900;1,100..900&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    font-family: Inter, Roboto, Arial;
+    color: rgba(153, 153, 153, 1);
+    list-style: none;
+    text-decoration: none;
+}
+
+body {
+    background: #1D2128;
+    overflow: hidden visible;
+}
+  
+hr {
+    background-color: rgba(229, 229, 229, 0.2);
+    border: 1px solid rgba(229, 229, 229, 0.2);
+    margin-top: 2rem;
+}

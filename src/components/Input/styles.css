@@ -1,0 +1,9 @@
+input {
+    border: 1px solid rgba(153, 153, 153, 1);
+    border-radius: 2rem;
+    color: rgba(153, 153, 153, 1);
+    background-color: transparent;
+    outline: none;
+    width: 100%;
+    padding: .5rem 0rem .5rem 1rem;
+}

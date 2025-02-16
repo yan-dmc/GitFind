@@ -1,0 +1,26 @@
+.ItemListH1 {
+    color: #fff;
+    text-align: center;
+    padding: 2rem;
+}
+
+.title {
+    padding: 1rem 0rem;
+}
+
+.repoLink {
+    color: rgba(83, 155, 245, 1);
+    transition: color .25s;
+}
+
+.repoLink:hover {
+    color: hsl(213, 89%, 74%);
+    cursor: pointer;
+    transition: all .5s;
+}
+
+li:last-child hr {
+    border: none;
+    outline: none;
+    margin-bottom: 2rem;
+}

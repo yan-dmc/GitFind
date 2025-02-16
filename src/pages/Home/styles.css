@@ -1,0 +1,62 @@
+.content {
+    width: 100%;
+    display: flex;
+    position: relative;
+    flex-direction: column;
+    flex-wrap: wrap;
+    transform: translateX(30%);
+    align-items: unset;
+}
+
+.search {
+    display: flex;
+    flex-direction: row;
+    padding: 5rem 0rem;
+    gap: 2rem;
+}
+
+.search div:nth-child(1) {
+    flex: 3;
+}
+
+.search div:nth-child(2) {
+    flex: 1;
+}
+
+.search, .gbCard, .repositorios {
+    width: 60%;
+}   
+
+@media (min-width: 601px) {
+    .content {
+        transform: translateX(30%);
+        align-items: unset;
+    }
+
+    .search, .gbCard, .repositorios {
+        width: 60%;
+    }
+}
+
+@media (max-width: 600px) {
+    .content {
+        transform: none;
+        align-items: center;
+    }
+
+    .search, .gbCard, .repositorios {
+        width: 80%;
+    }
+}
+
+
+/* @media (max-width: 390px) {
+    .content {
+        transform: none;
+        align-items: center;
+    }
+
+    .search, .gbCard, .repositorios {
+        width: 80%;
+    }
+} */

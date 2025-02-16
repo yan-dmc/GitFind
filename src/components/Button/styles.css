@@ -1,0 +1,18 @@
+button {
+    border: 1px solid rgba(153, 153, 153, 1);
+    border-radius: 2rem;
+    color: rgba(153, 153, 153, 1);
+    padding: .5rem 0rem;
+    outline: none;
+    background: rgba(45, 51, 59, 1);
+    width: 100%;
+    cursor: pointer;
+    transition: background .25s, border .25s, color .25s;
+}
+
+button:hover {
+    background: hsla(210, 13%, 20%, 0);
+    border: 1px solid rgb(255, 255, 255);
+    color: rgb(255, 255, 255);
+    transition: all .5s;
+}
