@@ -1,7 +1,7 @@
 {
   "name": "gitfind",
   "version": "1.0.0",
-  "homepage": "GitFind/",
+  "homepage": "https://github.com/yan-dmc/GitFind/",
   "main": "index.js",
   "scripts": {
     "start": "webpack serve --open --hot --mode development",
