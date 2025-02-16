@@ -1,7 +1,7 @@
 {
-  "name": "1projetoreact",
+  "name": "gitfind",
   "version": "1.0.0",
-  "homepage": "GitFind/public",
+  "homepage": "GitFind/",
   "main": "index.js",
   "scripts": {
     "start": "webpack serve --open --hot --mode development",
