@@ -29,7 +29,7 @@ module.exports = {
     },
     plugins: [
         new HtmlWebPackPlugin({
-            template: './docs/index.html',
+            template: './index.html',
         }),
     ],
 }
