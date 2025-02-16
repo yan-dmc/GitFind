@@ -4,6 +4,7 @@
   "homepage": "https://yan-dmc.github.io/GitFind/",
   "main": "index.js",
   "scripts": {
+    "test": "echo \"No test specified\" && exit 0",
     "start": "webpack serve --open --hot --mode development",
     "build": "webpack --mode production"
   },
