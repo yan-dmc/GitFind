@@ -8,21 +8,29 @@ on:
 jobs:
   deploy:
     runs-on: ubuntu-latest
+    permissions:
+      contents: write
+      pages: write
+      id-token: write
     steps:
-      - uses: actions/checkout@v2  # Baixa o repositório
+      - uses: actions/checkout@v2
 
-      - uses: actions/setup-node@v3  # Configura o Node.js
+      - uses: actions/setup-node@v3
         with:
-          node-version: '23.x'  # Use a versão do Node.js que você precisa
+          node-version: '18.x'
 
-      - name: Install dependencies  # Instala as dependências
+      - name: Install dependencies
         run: npm ci
 
-      - name: Build project  # Executa o script de build
+      - name: Build project
         run: npm run build
 
-      - name: Deploy to GitHub Pages  # Publica na GitHub Pages
+      - name: List build files
+        run: ls -R ./build
+
+      - name: Deploy to GitHub Pages
         uses: peaceiris/actions-gh-pages@v3
         with:
           github_token: ${{ secrets.GITHUB_TOKEN }}
-          publish_dir: ./build  # Certifique-se de que este é o diretório de saída do build
+          publish_dir: ./build
+          force_orphan: true
