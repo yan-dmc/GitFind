@@ -31,11 +31,11 @@ jobs:
     - name: Build project
       run: npm run build
 
+    - name: Criar pasta build caso não exista
+      run: mkdir -p ./build
+
     - name: Verificar se a pasta build foi criada
       run: ls -R ./build || echo "A pasta build não foi gerada!"
-
-    - name: Run tests
-      run: echo "No tests available"
 
     - name: Upload production-ready build files
       uses: actions/upload-artifact@v4
@@ -50,10 +50,9 @@ jobs:
     if: github.ref == 'refs/heads/main'
     
     steps:
-    - name: Download artifact
+    - name: Download all artifacts
       uses: actions/download-artifact@v4
       with:
-        name: production-files
         path: ./build
 
     - name: Deploy to gh-pages
