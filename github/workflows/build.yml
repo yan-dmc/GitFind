@@ -9,16 +9,20 @@ jobs:
   deploy:
     runs-on: ubuntu-latest
     steps:
-      - uses: actions/checkout@v2
-      - uses: actions/setup-node@v1
+      - uses: actions/checkout@v2  # Baixa o repositório
+
+      - uses: actions/setup-node@v3  # Configura o Node.js
         with:
-          node-version: '23.x'
-      - name: Build web-app
-        run: |
-          npm ci
-          npm run build
-      - name: Deploy to gh-pages
+          node-version: '23.x'  # Use a versão do Node.js que você precisa
+
+      - name: Install dependencies  # Instala as dependências
+        run: npm ci
+
+      - name: Build project  # Executa o script de build
+        run: npm run build
+
+      - name: Deploy to GitHub Pages  # Publica na GitHub Pages
         uses: peaceiris/actions-gh-pages@v3
         with:
           github_token: ${{ secrets.GITHUB_TOKEN }}
-          publish_dir: ./build
+          publish_dir: ./build  # Certifique-se de que este é o diretório de saída do build
