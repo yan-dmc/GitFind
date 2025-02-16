@@ -1,6 +1,7 @@
 {
   "name": "1projetoreact",
   "version": "1.0.0",
+  "homepage": "1projetoreact/public",
   "main": "index.js",
   "scripts": {
     "start": "webpack serve --open --hot --mode development",
