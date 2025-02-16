@@ -21,6 +21,10 @@ jobs:
       uses: actions/setup-node@v1
       with:
         node-version: 13.x
+
+    - name: Limpar cache do npm
+      run: npm cache clean --force
+
     
     - name: Install NPM packages
       run: npm ci
