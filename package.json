@@ -1,7 +1,7 @@
 {
   "name": "gitfind",
   "version": "1.0.0",
-  "homepage": "https://yan-dmc.github.io/GitFind/",
+  "homepage": "/GitFind/",
   "main": "index.js",
   "scripts": {
     "test": "echo \"No test specified\" && exit 0",
